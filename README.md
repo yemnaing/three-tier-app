@@ -1,4 +1,4 @@
-# Three-tier deployments with ReactJS, Flask, and MySQL
+# Three-tier deployment with ReactJS, Flask, and MySQL
 ## Project roadmap
 - Create a VPC  
 - Create two subnets (public and private)
