@@ -1,6 +1,6 @@
-# 3-tier-application deployment
+# Three-tier deployments with ReactJS, Flask, and MySQL
 
-## Components
+## Requirements
     - Frontend (ReactJS)
     - Backend (Python, Flask)
     - Database (MySQL)
@@ -20,4 +20,4 @@ CREATE USER 'twotieruser'@'%' IDENTIFIED BY 'super-secret-password';
 GRANT ALL PRIVILEGES ON *.* TO 'twotieruser'@'%' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 ```
-# three-tier-with-NodeJS-MySQL
+# Thank You!
