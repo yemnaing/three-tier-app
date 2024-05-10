@@ -1,21 +1,26 @@
 # Three-tier deployment with ReactJS, Flask, and MySQL
+## Tools: VPC, Nginx, Load Balancer, Auto Scaling, and RDS
 ## Project roadmap
-- Create a VPC  
-- Create two subnets (public and private)
-- Create an Internet Gateway for the public subnet
-- Create a NAT Gateway for the public subnet
-- One public route with the public subnet
-- One private route with the private subnet
-- Create two EC2 instances. One for the frontend server and another for the backend+database server
-- Clone the three-tier project
-- Install all the dependencies for the database on the backend+database server
-- Create the database, database user, and tables in MySQL
-- Install the backend dependencies on the backend+database server
-- Connect the database with the backend
-- Install the frontend dependencies
-- Connect the frontend to the backend
-- View the result
-
+- Create a VPC with 6 subnets, 4 route tables, an IGW, and a NAT using VPC Wizard
+- Create 4 EC2 servers for the bastion, backend, frontend, and database. Keep the bastion in a public subnet and others in private subnets
+- Configure the database server. Create the database, tables, and users.
+- Prepare the deployment environment in the backend server and deploy the backend application
+- Prepare the frontend environment and deploy it with Nginx
+- Create a Load Balancer for the backend servers
+- Create a Load Balancer for the frontend servers
+- Create a custom AMI of the frontend server
+- Run new frontend servers from the custom AMI
+- Create Auto Scaling Group(ASG) for the frontend servers
+- Stress the frontend servers manually and check if the ASG is working
+- Automate the running of the backend server with a shell script and Cron
+- Create an RDS database in the AWS
+- Connect to the RDS database in the AWS from the database server
+- Import data from the local database server to the RDS database
+- Create a custom AMI of the backend server
+- Run new backend servers from the custom AMI
+- Create Auto Scaling Group(ASG) for the backend servers
+- Check if the Backend ASG is working
+- View the deployment result
 ## Requirements
     - Frontend (ReactJS)
     - Backend (Python, Flask)
